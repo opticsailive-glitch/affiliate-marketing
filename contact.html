@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AffiliateSite</title>
+    <meta name="description" content="Get in touch with AffiliateSite. Have a question? We'd love to hear from you. Contact us via email or social media.">
+    <meta name="keywords" content="contact us, affiliate site, email contact, social media, customer support, feedback">
+    <link rel="canonical" href="https://affiliatesite.example/contact.html">
+    <meta name="author" content="AffiliateSite Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Contact Us - AffiliateSite">
+    <meta property="og:description" content="Get in touch with our team. We'd love to hear from you.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="container">
+            <div class="logo">
+                <h1>AffiliateSite</h1>
+            </div>
+            <nav role="navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="page-header" aria-label="Page Header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Have a question or suggestion? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>You can reach us via email or fill out the form below.</p>
+                    <div class="info-item" role="region" aria-labelledby="email-heading">
+                        <h3 id="email-heading">Email</h3>
+                        <p><a href="mailto:contact@affiliatesite.example" title="Send us an email">contact@affiliatesite.example</a></p>
+                    </div>
+                    <div class="info-item" role="region" aria-labelledby="social-heading">
+                        <h3 id="social-heading">Social Media</h3>
+                        <nav aria-label="Social Media Links">
+                            <div class="social-links">
+                                <a href="https://facebook.com/affiliatesite" title="Visit our Facebook page">Facebook</a>
+                                <a href="https://twitter.com/affiliatesite" title="Visit our Twitter profile">Twitter</a>
+                                <a href="https://instagram.com/affiliatesite" title="Visit our Instagram profile">Instagram</a>
+                                <a href="https://youtube.com/affiliatesite" title="Visit our YouTube channel">YouTube</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" method="POST" action="/api/contact" novalidate aria-label="Contact form">
+                        <div class="form-group">
+                            <label for="name">Name <span aria-label="required">*</span></label>
+                            <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-help">
+                            <small id="name-help">Your full name</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span aria-label="required">*</span></label>
+                            <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-help">
+                            <small id="email-help">We'll never share your email</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject <span aria-label="required">*</span></label>
+                            <input type="text" id="subject" name="subject" required aria-required="true" placeholder="What is your message about?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span aria-label="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Please tell us your thoughts, questions, or feedback..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" aria-labelledby="faq-heading">
+            <div class="container">
+                <h2 id="faq-heading">Frequently Asked Questions</h2>
+                <div role="region" aria-label="FAQ Items">
+                    <div class="faq-item">
+                        <h3>How do you choose which products to review?</h3>
+                        <p>We research market trends, customer demand, and expert opinions to select products that are popular and relevant to our audience.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you accept payment for positive reviews?</h3>
+                        <p>No, we never accept payment in exchange for positive reviews. Our reviews are always honest and unbiased.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How often do you update your reviews?</h3>
+                        <p>We regularly update our reviews to reflect new product releases, price changes, and updated information.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I suggest a product for review?</h3>
+                        <p>Absolutely! We welcome product suggestions from our readers. Please use the <a href="#contactForm">contact form above</a> to send us your ideas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AffiliateSite</h3>
+                    <p>Honest product reviews and buying guides to help you make informed decisions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="disclosure.html">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <nav aria-label="Social Media Links">
+                        <div class="social-links">
+                            <a href="https://facebook.com/affiliatesite" title="Visit our Facebook page">Facebook</a>
+                            <a href="https://twitter.com/affiliatesite" title="Visit our Twitter profile">Twitter</a>
+                            <a href="https://instagram.com/affiliatesite" title="Visit our Instagram profile">Instagram</a>
+                            <a href="https://youtube.com/affiliatesite" title="Visit our YouTube channel">YouTube</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AffiliateSite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
