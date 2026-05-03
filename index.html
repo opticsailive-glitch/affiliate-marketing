@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AffiliateSite - Honest Product Reviews & Guides</title>
+    <meta name="description" content="Honest, in-depth product reviews and buying guides to help you make informed purchasing decisions. Expert recommendations on electronics, home & kitchen, fitness, and more.">
+    <meta name="keywords" content="product reviews, buying guides, affiliate marketing, honest reviews, best products, consumer advice">
+    <link rel="canonical" href="https://affiliatesite.example/">
+    <meta name="author" content="AffiliateSite Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="AffiliateSite - Honest Product Reviews & Guides">
+    <meta property="og:description" content="Expert product reviews and buying guides to help you make informed decisions">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://affiliatesite.example/">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="container">
+            <div class="logo">
+                <h1>AffiliateSite</h1>
+            </div>
+            <nav role="navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-label="Hero Section">
+            <div class="container">
+                <h2>Find the Best Products for Your Needs</h2>
+                <p>We research, test, and review products so you don't have to. Trust our expert recommendations.</p>
+                <a href="blog.html" class="btn-primary" role="button">Explore Reviews</a>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="categories" aria-labelledby="categories-title">
+            <div class="container">
+                <h2 id="categories-title">Featured Categories</h2>
+                <div class="category-grid" role="region" aria-label="Product Categories">
+                    <a href="#electronics" class="category-card" role="button" tabindex="0">
+                        <h3>Electronics</h3>
+                        <p>Laptops, headphones, smartphones & more</p>
+                    </a>
+                    <a href="#home-kitchen" class="category-card" role="button" tabindex="0">
+                        <h3>Home & Kitchen</h3>
+                        <p>Appliances, cookware, gadgets</p>
+                    </a>
+                    <a href="#fitness" class="category-card" role="button" tabindex="0">
+                        <h3>Fitness</h3>
+                        <p>Trackers, equipment, accessories</p>
+                    </a>
+                    <a href="#home-office" class="category-card" role="button" tabindex="0">
+                        <h3>Home Office</h3>
+                        <p>Chairs, desks, organizers</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Blog Posts -->
+        <section class="latest-posts" aria-labelledby="latest-title">
+            <div class="container">
+                <h2 id="latest-title">Latest Reviews</h2>
+                <div class="posts-grid" role="region" aria-label="Latest Product Reviews">
+                    <!-- Post 1 -->
+                    <article class="post-card">
+                        <h3><a href="blog/laptops-under-500.html">Best Laptops Under $500 in 2024</a></h3>
+                        <p>Find the perfect budget laptop for work, school, or entertainment without breaking the bank.</p>
+                        <a href="blog/laptops-under-500.html" class="btn-sm" aria-label="Read review: Best Laptops Under $500 in 2024">Read Review</a>
+                    </article>
+                    <!-- Post 2 -->
+                    <article class="post-card">
+                        <h3><a href="blog/gaming-headphones.html">Top 10 Gaming Headphones for Immersive Sound</a></h3>
+                        <p>Enhance your gaming experience with crystal-clear audio and comfortable fit.</p>
+                        <a href="blog/gaming-headphones.html" class="btn-sm" aria-label="Read review: Top 10 Gaming Headphones for Immersive Sound">Read Review</a>
+                    </article>
+                    <!-- Post 3 -->
+                    <article class="post-card">
+                        <h3><a href="blog/kitchen-gadgets.html">Essential Kitchen Gadgets for Every Home Cook</a></h3>
+                        <p>Discover innovative tools that make cooking easier and more enjoyable.</p>
+                        <a href="blog/kitchen-gadgets.html" class="btn-sm" aria-label="Read review: Essential Kitchen Gadgets for Every Home Cook">Read Review</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 id="cta-title">Stay Updated with Our Latest Reviews</h2>
+                <p>Subscribe to our newsletter for exclusive buying guides and product recommendations.</p>
+                <form class="newsletter-form" method="POST" action="/api/subscribe" aria-label="Newsletter subscription form">
+                    <div class="form-group">
+                        <label for="newsletter-email" class="sr-only">Email address</label>
+                        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address" required aria-required="true" aria-describedby="newsletter-help">
+                        <small id="newsletter-help" class="sr-only">We'll never spam you. Unsubscribe at any time.</small>
+                    </div>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AffiliateSite</h3>
+                    <p>Honest product reviews and buying guides to help you make informed decisions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="disclosure.html">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <nav aria-label="Social Media Links">
+                        <div class="social-links">
+                            <a href="https://facebook.com/affiliatesite" title="Visit our Facebook page">Facebook</a>
+                            <a href="https://twitter.com/affiliatesite" title="Visit our Twitter profile">Twitter</a>
+                            <a href="https://instagram.com/affiliatesite" title="Visit our Instagram profile">Instagram</a>
+                            <a href="https://youtube.com/affiliatesite" title="Visit our YouTube channel">YouTube</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AffiliateSite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
